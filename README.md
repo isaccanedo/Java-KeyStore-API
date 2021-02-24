@@ -79,17 +79,16 @@ No armazenamento de chaves, podemos armazenar três tipos diferentes de entradas
 
 - Chaves simétricas (referidas como chaves secretas no JCE),
 - Chaves assimétricas (referidas como chaves públicas e privadas no JCE), e
-- Certificados confiáveis
-Vamos dar uma olhada em cada um.
+- Certificados confiáveis.
 
 ### Salvando uma chave simétrica
 A coisa mais simples que podemos armazenar em um armazenamento de chaves é uma chave simétrica.
 
 Para salvar uma chave simétrica, precisaremos de três coisas:
 
-1 - um alias - é simplesmente o nome que usaremos no futuro para nos referir à entrada
-2 - uma chave - que é envolvida em um KeyStore.SecretKeyEntry.
-3 - uma senha - que é envolvida no que é chamado de ProtectionParam.
+- um alias - é simplesmente o nome que usaremos no futuro para nos referir à entrada;
+- uma chave - que é envolvida em um KeyStore.SecretKeyEntry;
+- uma senha - que é envolvida no que é chamado de ProtectionParam.
 
 ```
 KeyStore.SecretKeyEntry secret
