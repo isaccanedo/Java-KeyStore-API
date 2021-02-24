@@ -117,10 +117,10 @@ O armazenamento de chaves assimétricas é um pouco mais complexo, pois precisam
 Além disso, a API KeyStore nos fornece um método dedicado chamado setKeyEntry, que é mais conveniente do que o método setEntry genérico.
 
 Portanto, para salvar uma chave assimétrica, precisaremos de quatro coisas:
-1- um alias, o mesmo de antes
-2 - uma chave privada. Como não estamos usando o método genérico, a chave não será agrupada. Além disso, para nosso caso, deve ser uma instância de PrivateKey
-3 - uma senha para acessar a entrada. Desta vez, a senha é obrigatória
-4 - uma cadeia de certificação que certifica a chave pública correspondente
+- Um alias, o mesmo de antes;
+- Uma chave privada. Como não estamos usando o método genérico, a chave não será agrupada. Além disso, para nosso caso, deve ser uma instância de PrivateKey;
+- Uma senha para acessar a entrada. Desta vez, a senha é obrigatória;
+- Uma cadeia de certificação que certifica a chave pública correspondente.
 
 ```
 X509Certificate[] certificateChain = new X509Certificate[2];
